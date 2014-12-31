@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relComp"
+    android:layout_weight="10"
+    tools:context=".MainActivity">
+    
+    <TextView android:id="@+id/txtNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/seBlack"
+        android:textSize="18sp"/>
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+       	android:layout_height="wrap_content" 
+       	> 	
+       	<!-- 
+	    <TableLayout
+	        android:id="@+id/tblCompareResults"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="visible">
+	
+	    </TableLayout> -->
+	    <TableLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/tblCompareResults">
+		    <TableRow style="@style/HeaderRow">
+		        <RelativeLayout
+			         android:layout_weight=".2"
+			         android:layout_width="0dip"
+			         android:layout_height="wrap_content"
+			         style="@style/HeaderText" >
+			         <Button
+			             android:background="@drawable/little_button"
+				         android:id="@+id/btnShowAll"
+				         style="@style/normalBtn"
+				         android:onClick="showAll"
+				         android:text="@string/display_all" />
+			
+				     <Button
+				         android:background="@drawable/little_button"
+				         android:id="@+id/btnShowDiff"
+				         style="@style/normalBtn"
+				         android:layout_below="@+id/btnShowAll"
+				         android:onClick="showDiff"
+				         android:text="@string/display_diff" />
+			     </RelativeLayout>
+		        <TextView
+		            android:id="@+id/txtProdA"
+		            android:layout_weight=".4"
+		           	android:layout_width="0dip"
+		            android:layout_height="wrap_content"
+		            android:padding="3dip"
+		            style="@style/HeaderText"/>
+		        <TextView
+		            android:id="@+id/txtProdB"
+		            android:layout_weight=".4"
+		            android:layout_width="0dip"
+		            android:layout_height="wrap_content"
+		            android:padding="3dip" 
+		            style="@style/HeaderText"/>
+		    </TableRow>
+			<TableRow style="@style/HeaderRow"
+			    android:id="@+id/tbrControler">
+			    <TextView
+		            android:layout_weight=".2"
+		           	android:layout_width="0dip"
+		            android:layout_height="wrap_content"
+		            android:padding="3dip"
+		            style="@style/HeaderText"
+		             />
+			    <RelativeLayout
+			         android:id="@+id/btnGroupProdA"
+			         android:layout_weight=".4"
+			         android:layout_width="0dip"
+			         android:layout_height="wrap_content"
+			         style="@style/HeaderText" >
+				    <Button
+				             android:background="@drawable/little_button"
+					         android:id="@+id/btncloseProdA"
+					         style="@style/normalBtn"
+					         android:onClick="closeProd"
+					         android:text="@string/closeProd" />
+				    <Button
+				             android:background="@drawable/little_button"
+					         android:id="@+id/btnSelectProdA"
+					         style="@style/normalBtn"
+					         android:onClick="selectProd"
+					         android:visibility="gone"
+					         android:text="@string/selectProd" />
+			    </RelativeLayout>
+			    <RelativeLayout
+			        android:id="@+id/btnGroupProdB"
+			         android:layout_weight=".4"
+			         android:layout_width="0dip"
+			         android:layout_height="wrap_content"
+			         style="@style/HeaderText" >
+				    <Button
+					         android:background="@drawable/little_button"
+					         android:id="@+id/btncloseProdB"
+					         style="@style/normalBtn"
+					         android:onClick="closeProd"
+					         android:text="@string/closeProd" />
+				    <Button
+				             android:background="@drawable/little_button"
+					         android:id="@+id/btnSelectProdB"
+					         style="@style/normalBtn"
+					         android:onClick="selectProd"
+					         android:visibility="gone"
+					         android:text="@string/selectProd" />
+				</RelativeLayout>
+			     
+			</TableRow>
+		</TableLayout>
+	</ScrollView>
+
+</RelativeLayout>

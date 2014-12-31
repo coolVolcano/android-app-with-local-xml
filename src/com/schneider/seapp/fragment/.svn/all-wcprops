@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/schneider-electric/!svn/ver/780/seapp/trunk/src/com/schneider/seapp/fragment
+END
+CategoryFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/schneider-electric/!svn/ver/779/seapp/trunk/src/com/schneider/seapp/fragment/CategoryFragment.java
+END
+FooterFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/schneider-electric/!svn/ver/750/seapp/trunk/src/com/schneider/seapp/fragment/FooterFragment.java
+END
+UpdateFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/schneider-electric/!svn/ver/780/seapp/trunk/src/com/schneider/seapp/fragment/UpdateFragment.java
+END
+CompareFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/schneider-electric/!svn/ver/778/seapp/trunk/src/com/schneider/seapp/fragment/CompareFragment.java
+END
